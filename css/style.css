@@ -1,0 +1,206 @@
+@charset "UTF-8";
+.ul__item,
+.ul__wrapper,
+.skills__block,
+.nav__block,
+.footer,
+.section {
+  display: flex;
+  gap: 10px;
+}
+
+body,
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  color: #272121;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  color: #272121;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none; /* Прибираємо маркери */
+}
+
+ul {
+  margin-left: 0; /* Відступ зліва в браузері IE і Opera */
+  padding-left: 0; /* Відступ зліва в браузері Firefox, Safari, Chrome */
+}
+
+/*
+.container-sv{
+    width: 100%;
+    padding: 8px;
+    padding-top: 0px;*/
+/*гид не управляет самим контейнером, а только к тем элементам , котоыре внутри. т.е паддинги для краев мы задаем самостоятельно. Также , чтобы прижать футер к подвалу пишем минимальную  высоту*/
+/*  display: grid;
+    row-gap: 20px;
+    column-gap: 20px;
+
+    grid-template-columns:  auto 1fr;
+    grid-template-rows: auto auto 100px;
+
+
+    grid-template-areas: "header header"
+                         "aside main"
+                         "footer footer"
+                         ;
+}*/
+header {
+  grid-area: header;
+  width: 100%;
+}
+
+main {
+  grid-area: main;
+  width: 100%;
+}
+
+aside {
+  grid-area: aside;
+  width: 100%;
+}
+
+footer {
+  grid-area: footer;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+}
+
+.section__description {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-wrap: break-word;
+  font-size: 1.3rem;
+}
+
+.article {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.article__title {
+  width: 100%;
+  font-weight: 600;
+  border-bottom: 1px solid #e98644;
+  align-self: center;
+}
+
+.section__title {
+  width: 100%;
+  font-weight: 600;
+}
+
+.section__subtitle {
+  font-size: 1.2rem;
+}
+
+.contact-items {
+  height: 1.5rem;
+  align-self: center;
+  fill: #272121;
+  transition: fill 0.4s linear;
+}
+
+.header__img {
+  max-width: 30%;
+}
+
+.img {
+  max-width: 30%;
+}
+
+.logo {
+  width: 100px;
+}
+
+.ul__wrapper,
+.section {
+  padding-top: 20px;
+  flex-direction: column;
+}
+
+.ul__text {
+  font-size: 1.3rem;
+  font-family: "Arial", sans-serif;
+  color: #272121;
+  transition: color 0.4s linear;
+}
+.ul__text:hover {
+  color: #da5903;
+}
+
+.font--secondary {
+  width: 100%;
+  font-family: "Cascadia Code", sans-serif;
+  color: #272121;
+  transition: color 0.4s linear;
+  background-color: #c4c4c4;
+  transition: background-color 0.4s linear;
+}
+.font--secondary:hover {
+  color: #fdc254;
+  background-color: #272121;
+}
+.font--secondary:hover .code__txt {
+  color: #fdc254;
+}
+
+.code__txt {
+  width: 100%;
+  text-wrap: wrap;
+}
+
+.ul__item:hover .ul__text {
+  color: #da5903;
+}
+.ul__item:hover .contact-items {
+  fill: #da5903;
+}
+
+.skills__block,
+.nav__link {
+  align-self: center;
+  padding: 10px;
+}
+
+.skills__title {
+  width: 40%;
+  font-size: 1.5rem;
+}
+
+.skills__item {
+  width: 12px;
+  height: 12px;
+  background-color: #e98644;
+  border-radius: 50%;
+}
+
+.skills__item--color-secondary {
+  background-color: #c4c4c4;
+}
+
+.footer {
+  justify-content: center;
+}
+
+.nav__link {
+  align-self: flex-end;
+}/*# sourceMappingURL=style.css.map */
